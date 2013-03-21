@@ -1,0 +1,11 @@
+{
+  "name": "ribbon",
+  "main": "index.scss",
+  "version": "0.1.0",
+  "dependencies": {},
+  "styles": ["index.scss"],
+  "files": [
+    "images/ribbon2-tails-left.png",
+    "images/ribbon2-tails-right.png"
+  ]
+}
