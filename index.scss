@@ -166,3 +166,19 @@ $arrow-height: 11px;
     }
   }
 }
+
+.ribbon {
+  @extend %ribbon;
+}
+
+.ribbon--dark {
+  @include ribbon($grey);
+  &:hover {
+    background: $grey;
+    cursor: default;
+  }
+}
+
+.ribbon--shadow {
+  box-shadow: 0 5px 10px rgba(#000, 0.2);
+}
