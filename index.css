@@ -1,0 +1,244 @@
+.panel-ribbon,
+.ribbon {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  border-top: 0;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  zoom: 1;
+  cursor: pointer;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.panel-ribbon [class*=title-],
+.ribbon [class*=title-] {
+  position: relative;
+  top: 1px;
+}
+
+.panel-ribbon .panel__icon,
+.ribbon .panel__icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -12px;
+}
+
+.panel-ribbon:before,
+.panel-ribbon:after,
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -11px;
+}
+
+.panel-ribbon:after,
+.ribbon:after {
+  right: 0;
+}
+
+.panel-ribbon:before,
+.ribbon:before {
+  left: 0;
+}
+
+.panel-ribbon {
+  transition: background .2s cubic-bezier(0.42,0,.58,1);
+  background: #007eac;
+  border-bottom: 1px solid #00739d;
+}
+
+.panel-ribbon:hover {
+  background: #0091c6;
+}
+
+.panel-ribbon:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 11px 0 0 10px;
+  border-left-color: #005979;
+}
+
+.panel-ribbon:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 11px 10px;
+  border-bottom-color: #005979;
+}
+
+.panel-ribbon.is-excluded {
+  transition: background .2s cubic-bezier(0.42,0,.58,1);
+  background: #a20000;
+  border-bottom: 1px solid #930000;
+}
+
+.panel-ribbon.is-excluded:hover {
+  background: #bc0000;
+}
+
+.panel-ribbon.is-excluded:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 11px 0 0 10px;
+  border-left-color: #6f0000;
+}
+
+.panel-ribbon.is-excluded:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 11px 10px;
+  border-bottom-color: #6f0000;
+}
+
+.panel-ribbon.is-flat {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.panel-ribbon.is-flat:before,.panel-ribbon.is-flat:after {
+  display: none;
+}
+
+.ribbon-2 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #007500;
+  background-image: radial-gradient(center bottom,#5bb602 0,#007500 60%);
+  border: 2px solid rgba(255,255,255,.2);
+  color: #fff;
+  position: relative;
+  text-shadow: 1px 0 1px rgba(0,0,0,.2);
+  z-index: 100;
+}
+
+.ribbon-2:hover {
+  background-color: #008400;
+  background-image: radial-gradient(center bottom,#5bb602 0,#008400 60%);
+}
+
+.no-opacity .ribbon-2 {
+  border: 2px solid #349134;
+}
+
+.ribbon-2:before,
+.ribbon-2:after {
+  background: red;
+  content: '';
+  height: 91px;
+  position: absolute;
+  top: -27px;
+  width: 81px;
+  z-index: -100;
+}
+
+.ribbon-2:before {
+  background: url(images/ribbon2-tails-left.png) 0 0 no-repeat;
+  left: -37px;
+}
+
+.ribbon-2:after {
+  background: url(images/ribbon2-tails-right.png) 0 0 no-repeat;
+  right: -37px;
+}
+
+.ribbon-2 .ribbon__copy {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+}
+
+.ribbon-2 .ribbon__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ribbon-2 .ribbon__callout {
+  background-color: #2bac0a;
+  background-image: linear-gradient(top,#2bac0a 0,#196406 25%);
+  box-shadow: 0 2px 3px 1px rgba(0,0,0,.3);
+  display: block;
+  font-weight: 700;
+  position: absolute;
+  right: 48px;
+  text-align: center;
+  top: -12px;
+  width: 120px;
+}
+
+.ribbon-2 .ribbon__callout:before {
+  border-color: transparent transparent #155505;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  content: "";
+  display: block;
+  height: 0;
+  left: -10px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.no-cssanimations .ribbon-2 .ribbon__callout {
+  background-color: #1f7c07;
+}
+
+.ribbon-2 .ribbon__callout-date {
+  border: 2px solid rgba(255,255,255,.2);
+  margin: 5px;
+}
+
+.ribbon-2 .ribbon__callout-date span {
+  display: block;
+  line-height: 23px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+.ribbon--dark {
+  transition: background .2s cubic-bezier(0.42,0,.58,1);
+  background: #666;
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.ribbon--dark:hover {
+  background: #737373;
+}
+
+.ribbon--dark:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 11px 0 0 10px;
+  border-left-color: #4d4d4d;
+}
+
+.ribbon--dark:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 11px 10px;
+  border-bottom-color: #4d4d4d;
+}
+
+.ribbon--dark:hover {
+  background: #666;
+  cursor: default;
+}
+
+.ribbon--shadow {
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
